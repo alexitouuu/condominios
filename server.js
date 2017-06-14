@@ -8,7 +8,6 @@ const path = require('path'),
       routes = require('./routes/routes'),
       passport = require('passport'),
       bodyParser = require('body-parser'),
-      multer = require('multer'),
       flash = require('connect-flash'),
       cookieSession = require('cookie-session');
 
