@@ -1,0 +1,58 @@
+<%- include ../templates/header -%>
+
+<div id="wrapper1">
+    <div align="center"><img src="/img/user.png" width="120" height="120" alt="logo" /></div>
+	<div class="join">Registro</div>
+	<br>
+    	<div class="lock"></div>
+    <div class="clr"></div>
+    <br>
+    <div class="clr"><hr /></div><br><br><br>
+                    		<div class="mail-text">Llene todos los campos para tener acceso a SIADCON</div>
+	<div class="forms">
+                                    <form  action="/user/signup" class="form-horizontal" method="POST">
+                    <fieldset>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-home bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input required id="_id" name="_id" type="text" placeholder="Núm. de departamento" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input required id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input required id="apellidos" name="apellidos" type="text" placeholder="Apellidos" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input required id="correo" name="correo" type="text" placeholder="Correo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-key"></i></span>
+                            <div class="col-md-8">
+                                <input id="password" name="password" type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-success btn-lg" value="ENVIAR">Registrar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+</div>
+	</div>
+
+<%- include ../templates/footer -%>

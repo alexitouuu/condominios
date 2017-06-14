@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/default.css" media="all" />
+	<link rel="stylesheet" href="/css/flexslider.css" type="text/css" />
+	<link rel="stylesheet" href="/css/fixed-navigation.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+    
+</head><!--/head-->
+<title><%= title%></title>
+<body onload="initialize()">
+	<div id="pagewidth">
+		<header id="header">
+			<div class="center">
+				<nav id="mainNav">
+					<ul>
+						 <% if (isAuthenticated) { %>
+                            <% if (user[0].admin) { %>
+                            <li class="active"><a href="/admin/panel"><span>Administración</span></a></li> 
+                            <%}else{%>
+                             <li class="active"><a href="/user/panel"><span>Panel Usuario</span></a></li> 
+                            <% }%>
+                            <li><a href="/user/logout">Cerrar Sesión</a></li>
+                            <%} else { %>
+                            <li><a href="/user/signup"><span>Registro</span></a></li>
+                            <li><a href="/user/signin"><span>Login</span></a></li>
+                        <% } %>                                      
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>    
+                   <br> <br><br><br><br><br><br><br><br>
+

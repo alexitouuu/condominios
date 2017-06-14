@@ -1,0 +1,118 @@
+<%- include ../templates/header -%>
+
+ <center><h7>Administrador</h7></center>
+  <div id="wrapper3" align="center">
+    <div align="center"><img src="/img/admin.png" width="120" height="120" alt="logo" /></div>
+	<div class="join">Perfil de Root</div>
+	<br><br><br>
+    	<div class="lock"></div>
+    <div class="clr"></div>
+    <br>
+    <div class="clr"><hr /></div><br><br><br>
+                    		<div class="mail-text">Cargue la Cuota por Cada Concepto</div>
+	<div class="forms">
+                                     <form  action="/admin/panel" class="" method="POST">
+                    <fieldset>
+                        <h3>Cuota Mensual de Servicios</h3><br>
+                        
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          # de Departamento*
+                            </label>
+                              <div class="col-md-8">
+                                <input required id="dep" name="dep" type="text" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Limpieza Áreas comunes *
+                            </label>
+                              <div class="col-md-8">
+                                <input required id="limpieza" name="limpieza" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Electricidad y Alumbrado *
+                            </label>
+                              <div class="col-md-8">
+                                <input required id="energia" name="energia" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                       <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Seguridad *
+                            </label>
+                              <div class="col-md-8">
+                                <input required id="seguridad" name="seguridad" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Recolección de Basura*
+                            </label>
+                              <div class="col-md-8">
+                                <input id="basura" name="basura" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Telefono de Vigilancia*
+                            </label>
+                              <div class="col-md-8">
+                                <input id="telefono" name="telefono" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Mantenimiento Áreas Verdes*
+                            </label>
+                              <div class="col-md-8">
+                                <input id="jardineria" name="jardineria" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                         <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Gas LP*
+                            </label>
+                              <div class="col-md-8">
+                                <input id="gas" name="gas" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Pago del Predial*
+                            </label>
+                              <div class="col-md-8">
+                                <input id="predial" name="predial" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <label class="control-label col-xs-2">
+                          Honorarios del Admon*
+                            </label>
+                              <div class="col-md-8">
+                                <input id="honorarios" name="honorarios" type="number" placeholder="" class="form-control">
+                            </div>
+                              </div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-2">
+                                Servicios Diversos (mantenimiento a tuberias,remosamiento de cemento,etc)*
+                            <div class="col-md-8">
+                                <input id="otros" name="otros" type="number" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-success btn-lg" value="ENVIAR">Cargar Montos</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                
+</div>
+	</div>
+
+
+
+<%- include ../templates/footer -%>

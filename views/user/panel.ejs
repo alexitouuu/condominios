@@ -1,0 +1,22 @@
+<%- include ../templates/header -%>
+
+    <center><h7>¡Bienvenido <%= user[0].nombre %>!</h7></center>
+  <div id="wrapper2">
+    <div align="center"><img src="/img/infopago.png" width="120" height="120" alt="logo" /></div>
+	<div class="join">Panel de Usuario</div>
+	<br>
+    	<div class="lock"></div>
+    <div class="clr"></div>
+    <br>
+    <div class="clr"><hr /></div><br><br><br>
+                    		<div class="mail-text">Si ya realizó su pago suba su comprobante</div>
+	<div class="forms">
+                                    <legend>Examine la imagen de su recibo </legend>
+                    <form action="/user/panel" method='post' enctype='multipart/form-data'>
+                        <center><input type="file" name='archivo'></center>
+                       <button type="submit" class="button" value="Subir">Subir</button>
+                    </form>
+</div>
+	</div>
+
+<%- include ../templates/footer -%>
